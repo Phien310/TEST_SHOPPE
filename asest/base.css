@@ -1,0 +1,128 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333333;
+    --navbar-height: 35px;
+    --header-height: 120px;
+    --header-with-height: calc((var(--header-height)) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.gird {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gird__full-with {
+    width: 100%;
+}
+
+.gird__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+
+.column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.334%;
+}
+
+.btn {
+    min-width: 90px;
+    height: 35px;
+    background: #fff;
+    color: #555;
+    border-radius: 2px;
+    border: 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+}
+
+.btn-active {
+    background: #EE4D2D;
+    color: #fff;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: default !important;
+}
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+    padding: 0px;
+}
+
+.pagination-item {
+    list-style: none;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+}
+
+.pagination-item__link {
+    --height: 30px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    display: block;
+    text-align: center;
+    line-height: var(--height);
+}
+
+.pagination-item__icon {}
+
+.pagination-item--active {
+    background: #EE4D2D;
+    color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%)
+}
+
+.pagination-item--active:hover {
+    background: #EE4D2D;
+    filter: brightness(110%);
+}
